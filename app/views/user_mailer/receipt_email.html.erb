@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Here is your receipt from Jungle, <%= @user.name %></h1>
+    <p>
+      You have successfully signed up to example.com,
+      your order number is: <%= @order.stripe_charge_id %>.<br>
+    </p>
+    <p>Thanks for shopping with us!</p>
+  </body>
+</html>
