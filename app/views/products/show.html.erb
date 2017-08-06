@@ -29,3 +29,21 @@
   </article>
 
 </section>
+
+<div> 
+            <% @review.each do |item| %>
+<%= item.description %>
+          <% end %>
+
+</div>
+<% if current_user %>
+  <%= form_for([@product, Review.new]) do |form| %>
+    <div class="field">
+      <%= form.text_area :description, id: :product_reviews  %>
+      <%= form.select :rating, 1..5, id: :product_reviews %>
+    </div>
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+  <% end %>
+<% end %>
