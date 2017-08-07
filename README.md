@@ -1,6 +1,9 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. Features were added on top of the initial Jungle skeleton found [here](https://github.com/lighthouse-labs/jungle-rails). Users can sign-up, log into accounts, and browse products. Products can be added to a cart and credit card information is handled via the Stripe API during checkout. An email confirmation is sent to the user once the checkout is processed. Admin account allows for the addition of products and product categories. Products can be filtered by both admins and regular users. 
+
+## Screenshot
+![Jungle Home Page](https://github.com/rajmytaj/jungle-rails/blob/master/app/assets/images/products.png)
 
 
 ## Setup
