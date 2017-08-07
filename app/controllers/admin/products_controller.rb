@@ -22,7 +22,7 @@ class Admin::ProductsController < ApplicationController
   def destroy
     @product = Product.find params[:id]
     @product.destroy
-    redirect_to [:admin, :products], notice: 'Product deleted!'
+    redirect_to [:admin, :products], flash: { error: 'Product deleted!' }
   end
 
   private

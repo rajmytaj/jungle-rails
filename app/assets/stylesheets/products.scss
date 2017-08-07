@@ -1,3 +1,4 @@
+
 main section.products-index,
 main section.categories-show {
 
@@ -50,16 +51,19 @@ main section.categories-show {
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
       }
-      aside.sold-out {
+      aside.soldout {
         position: absolute;
         top: 0;
         left: 0;
         padding: 10px;
-        background-color: #e59294;
+        background-color: #fa9d9d;
+        color: white;
+        font-weight: bold;
         border-top-left-radius: 4px;
         border-bottom-right-radius: 20px;
         font-size: 0.8em;
-      }      
+      }
+
       &:hover {
 
         border-color: #999;
@@ -74,7 +78,7 @@ main section.categories-show {
 }
 
 main section.products-show {
-
+  height: 500px;
   .product-detail {
     img.main-img {
       max-width: 100%;
@@ -82,4 +86,6 @@ main section.products-show {
   }
 }
 
-
+.new-product{
+  margin-left: 0px;
+}
