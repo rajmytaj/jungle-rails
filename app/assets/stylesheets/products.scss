@@ -1,10 +1,6 @@
-.alert-notice { @extend .alert-success; }
-.alert-alert  { @extend .alert-info; }
-.alert-error  { @extend .alert-danger; } 
 
 main section.products-index,
-main section.categories-show,
-main section.categories-index{
+main section.categories-show {
 
   .products {
     display:         flex;
@@ -55,16 +51,18 @@ main section.categories-index{
         border-bottom-left-radius: 20px;
         font-size: 0.8em;
       }
-      aside.sold-out {
-        color: white;
+      aside.soldout {
         position: absolute;
         top: 0;
         left: 0;
         padding: 10px;
-        background-color: #e2a1ad;
+        background-color: #fa9d9d;
+        color: white;
+        font-weight: bold;
         border-top-left-radius: 4px;
-        border-bottom-right-radius: 20px;        
-      }   
+        border-bottom-right-radius: 20px;
+        font-size: 0.8em;
+      }
 
       &:hover {
 
@@ -80,7 +78,7 @@ main section.categories-index{
 }
 
 main section.products-show {
-
+  height: 500px;
   .product-detail {
     img.main-img {
       max-width: 100%;
@@ -88,42 +86,6 @@ main section.products-show {
   }
 }
 
-
-.notice {
-  color: red;
-  left: 100px;
-  position: relative;
+.new-product{
+  margin-left: 0px;
 }
-
-div.review.jumbotron {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-div.review {
-  left: 11%;
-  position: relative;
-}
-
-.table {
-  position: fixed;
-  left: 43%;
-  top: 65%;
-  width: 50%;
-  .description {
-    position: relative;
-    width: 55%;
-  }
-}
-
-.table-view  {
-  position: relative;
-  left: 10%;
-  top: 25px;
-  width: 90%;
-  .description {
-    position: relative;
-    width: 55%;
-  }
-}
-
-
