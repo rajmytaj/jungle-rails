@@ -35,7 +35,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
         <% if current_user %>
-            Signed in as <%= current_user.first_name %> | <%= link_to "Logout", logout_path, method: :delete %>
+            Signed in as <%= current_user.email %> | <%= link_to "Logout", logout_path, method: :delete %>
           <% else %>
             <%= link_to 'Login', '/login' %>
           <% end %>
