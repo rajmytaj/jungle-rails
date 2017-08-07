@@ -33,14 +33,24 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+      <% if current_user %>
         <li>
-        <% if current_user %>
-            Signed in as <%= current_user.first_name %> | <%= link_to "Logout", logout_path, method: :delete %>
-          <% else %>
-            <%= link_to 'Login', '/login' %>
+          Signed in as <%= current_user.email %>  <%= link_to '/logout' do %>
+            Logout
           <% end %>
-
         </li>
+      <% else %>
+        <li>
+          <%= link_to '/login' do %>
+            Login
+          <% end %>
+        </li>
+        <li>
+          <%= link_to '/signup' do %>
+            Register
+          <% end %>
+        </li>
+        <% end %>
        <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
